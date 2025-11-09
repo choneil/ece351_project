@@ -1,5 +1,5 @@
 load('chars.mat');
-[data, Fs] = audioread('embedded_hello.wav');
+[data, Fs] = audioread('soundFreqsEmbedded.wav');
 fnames = fieldnames(chars)
 n = numel(fnames);
 n = n/2
@@ -20,4 +20,5 @@ end
 legend show
 % y = wavelet_conv(20700, Fs, data);
 % var(y)
+
 % plot(real(y))
