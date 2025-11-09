@@ -1,7 +1,7 @@
 %embed_tones.m
 
 load("chars.mat");
-[data,Fs] = audioread("ece351_sound.wav");
+[data,Fs] = audioread("ece351Sound.wav");
 size(data)
 embed_chars = 'Hello World';
 len = length(embed_chars);
@@ -17,4 +17,5 @@ for i = 1:len
     end
 end
 y_embed = y_embed./max(abs(y_embed));
-audiowrite("embedded_hello.wav",y_embed(:,1),Fs);
+
+audiowrite("soundFreqsEmbedded.wav",y_embed(:,1),Fs);
