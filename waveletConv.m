@@ -1,4 +1,4 @@
-function y = wavelet_conv(freq, Fs, data)
+function y = waveletConv(freq, Fs, data)
     fwhm = .1;
     dur = 0.1;
     len = round(dur*Fs);
