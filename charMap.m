@@ -1,3 +1,8 @@
+%charMap.m
+%struct of chars matching frequencies which are incremented
+%by 50Hz from 20000Hz to 21250Hz
+%the struct is saved as chars.mat
+
 chars = struct();
 chars.A = 20000;
 chars.B = 20050;
